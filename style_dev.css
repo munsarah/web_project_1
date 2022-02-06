@@ -1,9 +1,8 @@
-/*Rule for new class page created that applies to entire page*/
 .page {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue" Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -22,11 +21,11 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .logo {
-  max-width: 196px;
+  width: 196px;
   height: 60px;
 }
 
@@ -118,12 +117,11 @@
   margin: 24px 0 0;
 }
 
-/* CSS rule for new class - placed before .card: as parents should precede their children */
+/* CSS rule for new class. Make sure to place it before .card: parents should precede their children */
 .staff__page {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
   max-width: 760px;
   margin: 100px auto 50px;
   margin-top: 68px;
@@ -136,7 +134,6 @@
   box-sizing: border-box;
   width: 360px;
   height: 420px;
-  margin-bottom: 40px;
 }
 
 .card__content {
@@ -166,6 +163,7 @@
   position: absolute;
   bottom: 0;
 }
+
 .events {
   padding: 100px 0 120px 80px;
   display: flex;
@@ -216,8 +214,6 @@
 
 .event-info__icon_pin {
   background-image: url(../images/icon_pin.svg);
-  height: 24px;
-  width: 24px;
 }
 
 .event-info__text {
@@ -246,45 +242,49 @@
   flex-shrink: 0;
   flex-basis: 780px;
   position: relative;
+  border: solid red;
 }
 
-.events__image {
+/* .events__image {
   max-width: 100%;
-}
+} */
 
 .person {
   position: absolute;
-  display: flex;
+  display: flexbox;
   align-items: center;
   flex-direction: column;
   gap: 10px;
 }
 
 .person_name_feynman {
-  top: -30px;
+  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 30px;
   left: 319px;
 }
 
 .person_name_burbidge {
-  top: 96px;
-  right: 125px;
+  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 45px;
+  right: 120px;
 }
 
 .person_name_cannon {
-  flex-direction: column-reverse;
-  bottom: 18px;
-  right: 216px;
+  /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 30px;
+  right: 210px;
 }
 
 .person_name_mitchell {
-  flex-direction: column-reverse;
-  bottom: 82px;
-  left: 142px;
+  /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 50px;
+  left: 72px;
 }
 
 .person_name_tarter {
-  top: 79px;
-  left: 159px;
+  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 40px;
+  left: 130px;
 }
 
 .person__image {
@@ -328,14 +328,11 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  display: flex;
-  justify-content: center;
-  flex-basis: auto;
+  /* Add styles */
 }
 
 .step {
-  width: 220px;
-  padding: 40px;
+  /* Add styles */
 }
 
 .step__title {
@@ -361,21 +358,12 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  display: flex;
-  column-gap: 120px;
-}
-
-.about-text {
-  display: flex;
-  row-gap: 32px;
 }
 
 .about__title {
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  max-width: 154px;
-  z-index: 1;
 }
 
 .about__content {
@@ -386,8 +374,6 @@
 }
 
 .about__paragraph {
-  position: relative;
-  z-index: 1;
 }
 
 .about__circle {
@@ -395,34 +381,22 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
-  position: absolute;
-  top: -121px;
-  left: -91px;
-  z-index: 0;
 }
 
 .footer {
   box-sizing: border-box;
-  background-color: #1f1f1f;
-  color: #ffffff;
-  padding: 57px 102px 60px 80px;
 }
 
 .footer__columns {
-  display: flex;
-  margin: auto;
 }
 
 .footer__column_hours {
-  margin-left: auto;
 }
 
 .footer__column_social {
-  padding-left: 100px;
 }
 
 .footer__logo {
-  width: 153px;
 }
 
 .footer__list {
@@ -430,16 +404,12 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  color: #f2f2f2;
 }
 
 .footer__list-item {
-  margin-bottom: 16px;
-  color: #f2f2f2;
 }
 
 .footer__column-heading {
-  font-size: 16px;
 }
 
 .footer__column-link {
@@ -450,13 +420,7 @@
 }
 
 .footer__social-icon {
-  margin-right: 10px;
 }
 
 .footer__copyrights {
-  padding-top: 60px;
-}
-/* when hovered over, the link will turn gray */
-.footer__column-link:hover {
-  color: #c1c1c1;
 }
