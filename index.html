@@ -18,7 +18,7 @@
             alt="Practicum Library Logo"
             class="logo"
           />
-          <div class="nav-links">
+          <div class="nav__link">
             <a href="#staff" class="nav__link">Staff picks</a>
             <a href="#events" class="nav__link">Events</a>
             <a href="#membership" class="nav__link">Become a member</a>
@@ -48,10 +48,10 @@
       <main class="content">
         <section id="staff" class="staff">
           <h2 class="staff__title">Staff picks</h2>
-          <h3 class="staff__subtitle">That our readers love</h3>
+          <p class="staff__subtitle">That our readers love</p>
           <!-- Wrap all the cards into a single container! -->
           <div class="staff__page">
-            <div class="card">
+            <article class="card">
               <div class="card__content">
                 <h4 class="card__title">Introduction to Algorithms</h4>
                 <p class="card__text">
@@ -66,7 +66,7 @@
                   Clifford Stein
                 </p>
               </div>
-            </div>
+            </article>
 
             <div class="card">
               <div class="card__content">
@@ -129,11 +129,13 @@
             </h2>
             <div class="event-info events__info-section">
               <div class="event-info__item">
-                <div class="event-info__icon event-info__icon_calendar"></div>
+                <div
+                  class="event-info__icon event-info__icon_type_calendar"
+                ></div>
                 <p class="event-info__text">Mon, January 12</p>
               </div>
               <div class="event-info__item">
-                <div class="event-info__icon event-info__icon_pin"></div>
+                <div class="event-info__icon event-info__icon_type_pin"></div>
                 <p class="event-info__text">
                   Practicum Library Conference Hall & Online
                 </p>
@@ -292,7 +294,7 @@
 
       <footer class="footer" id="footer">
         <div class="footer__columns">
-          <div class="footer__column footer__logo">
+          <div class="footer__column">
             <img
               src="./images/logo_white.png"
               alt="Practicum Library Logo"
@@ -300,7 +302,7 @@
             />
           </div>
 
-          <div class="footer__column footer__column_hours">
+          <div class="footer__column footer__column_type_hours">
             <h5 class="footer__column-heading">Hours</h5>
             <ul class="footer__list">
               <li class="footer__list-item">Weekdays: 9am - 8pm</li>
@@ -308,7 +310,7 @@
             </ul>
           </div>
 
-          <div class="footer__column footer__column_social">
+          <div class="footer__column footer__column_type_social">
             <h5 class="footer__column-heading">Social media</h5>
             <ul class="footer__list">
               <li class="footer__list-item">
