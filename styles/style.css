@@ -95,6 +95,7 @@
 
 .header__address {
   color: #838383;
+  font-style: normal;
 }
 
 .staff {
@@ -119,13 +120,13 @@
 }
 
 /* CSS rule for new class - placed before .card: as parents should precede their children */
-.staff__page {
+.staff__cards {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   max-width: 760px;
-  margin: 68px auto;
+  margin: 68px auto 0;
   gap: 40px;
 }
 
@@ -257,6 +258,7 @@
   gap: 10px;
 }
 
+/*positioning the pictures relative to the part of section - events_cover*/
 .person_name_feynman {
   top: -30px;
   left: 319px;
